@@ -1,0 +1,234 @@
+
+
+@media screen {
+    .tm-nav-item-link:hover {
+        color: #fff;
+        background-color: lightskyblue;
+    }
+
+    .tm-banner {
+        background: linear-gradient(90deg, rgba(135,206,250,1) 0%, rgba(222,184,135,1) 100%);
+    }
+
+    .tm-banner-inner {
+        background-color: #fff;
+    }
+
+    .tm-banner-text {
+        text-shadow: #333 5px 5px 3px;
+        position: relative;
+        animation: text_move 3s;
+    }
+
+    @keyframes text_move {
+        0%{
+            left: 200px;
+        }
+
+        100%{
+            left: 0px;
+        }
+    }
+
+    .flex-2-col {
+        display: flex;
+    }
+
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tm-section-title {
+        text-align: center;
+    }
+
+    .tm-section-description {
+        text-indent: 25px;
+        line-height: 30px;
+    }
+
+    .tm-box-bg-title:hover {
+        background-color: lightgrey;
+        color: lightskyblue;
+    }
+
+    .heading h2 {
+        color: lightskyblue;
+        text-align: center;
+    }
+
+    .padding-medium li {
+        list-style-type: lower-alpha;
+    }
+
+    .text::after{
+        display:inline-block;
+        content: "New";
+        color: red;
+        vertical-align: super;
+        font-size: 9px;
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+
+    .padding-medium a:hover:before {
+        content: '>';
+        display:inline-block;
+    }
+
+    .blocks h2 {
+        text-align: left;
+    }
+
+    .blocks .tm-section-description:last-child {
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+
+    .box-work {
+        padding: 10px;
+
+    }
+
+    .box-work:nth-child(odd) {
+        background-color: lightskyblue;
+        color: #fff;
+    }
+    .box p {
+        font-style: italic;
+    }
+
+    .box p::first-letter {
+        font-weight: bold;
+    }
+
+    #contact_message {
+        background: url(../img/email-icon.png);
+        background-repeat: no-repeat;
+        background-position: 99% 95%;
+        background-size: 30px;
+    }
+
+    .form-control {
+        border-color: lightskyblue;
+    }
+
+    #contact_name, #contact_email, #contact_subject {
+        border-top-color: #fff;
+        border-left-color: #fff;
+        border-right-color: #fff;
+    }
+
+    #contact_name:focus, #contact_email:focus, #contact_subject:focus {
+        background-color: lightskyblue;
+        border-color: lightskyblue
+    }
+
+    #contact_message:focus {
+        border-color: lightskyblue;
+        box-shadow: #fff 0px 0px 0px;
+    }
+
+    .submit-btn {
+        border-color: lightskyblue;
+        background-color: #fff;
+        color: lightskyblue;
+        float: right;
+        height: 58px;
+        width: 107px;
+        font-size: 16px;
+    }
+
+    .submit-btn:hover {
+        background-color: lightskyblue;
+        border-color: lightskyblue;
+    }
+
+    .tm-sidebar, .tm-content-header, section {
+        box-shadow: rgba(61, 55, 61, 0.7) 0px 0px 10px;
+    }
+
+    section {
+        position: relative;
+    }
+
+    section::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 45px 45px 0 0px;
+        border-color: lightskyblue transparent transparent transparent;
+    }
+}
+
+@media print {
+    body {
+        background-color: #fff;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tm-main-content {
+        padding-top: 0px;
+    }
+
+    .tm-sidebar, .tm-team-img, .gallery-container, .img-contact-us, #contact, .carousel-indicators{
+        display: none;
+    }
+
+    .tm-content-box {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .tm-team-description-container, .tm-banner-inner, .carousel-content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .blocks .tm-section-description:last-child {
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+
+    h2.tm-section-title, h2{
+        color: rgb(74, 157, 212);;
+        font-weight: lighter;
+    }
+
+    .heading {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .heading li {
+        list-style-type: none;
+        text-align: justify;
+    }
+
+    .padding-medium, .carousel-content {
+        padding: 10px 40px;
+        margin: 0 auto;
+    }
+
+    .padding-medium li:nth-child(odd) {
+        text-align: right;
+    }
+
+    .heading ol {
+        padding: 0px;
+    }
+
+    .tm-main-content {
+        padding-top: 0px;
+    }
+}
