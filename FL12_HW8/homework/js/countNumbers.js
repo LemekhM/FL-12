@@ -14,11 +14,10 @@ function makeNumber() {
 function countNumbers(a) {
     let obj = makeNumber(a);
     let arr = obj.split('');
-    console.log(arr);
     const result ={};
 
     arr.forEach(number => {
-        result[number] ? result[number] + 1 : result[number] = 1
+        result[number] !== undefined ? result[number] ++ : result[number] = 1
     });
     return result
 }
